@@ -21,24 +21,24 @@
 # end
 
   
-# class Ship
-#   attr_accessor :name, :type, :booty
+class Ship
+  attr_accessor :name, :type, :booty
 
-#   @@ships = []
+  @@ships = []
 
-#   def initialize(params)
-#     @name = params[:name]
-#     @type = params[:type]
-#     @booty = params[:booty]
-#     @@ships << self
-#   end
+  def initialize(params)
+    @name = params[:name]
+    @type = params[:type]
+    @booty = params[:booty]
+    @@ships << self
+  end
 
-#   def self.all
-#     @@ships
-#   end
+  def self.all
+    @@ships
+  end
 
-#   def self.clear
-#     @@ships = []
-#   end
+  def self.clear
+    @@ships = []
+  end
 
-# end
+end
